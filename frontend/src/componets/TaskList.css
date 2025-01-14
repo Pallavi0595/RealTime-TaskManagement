@@ -1,0 +1,177 @@
+/* /* Task List Container */
+.task-list-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Add Task Button */
+.add-task-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  width: auto;
+}
+
+.add-task-btn:hover {
+  background-color: #45a049;
+}
+
+/* Task Table */
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.task-table th,
+.task-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.task-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.task-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.task-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.task-table td {
+  color: #555;
+}
+
+.task-table td:hover {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Action Icons */
+.edit-icon, .delete-icon {
+  cursor: pointer;
+  margin: 0 5px;
+  font-size: 1.2rem;
+}
+
+.edit-icon:hover, .delete-icon:hover {
+  color: #4CAF50;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+  .task-table {
+    font-size: 0.9rem;
+  }
+
+  .task-list-container {
+    width: 95%;
+  }
+
+  .task-table th, .task-table td {
+    padding: 8px;
+  }
+}
+
+
+
+/* Task List Container */
+.task-list-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Add Task Button */
+.add-task-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.add-task-btn:hover {
+  background-color: #45a049;
+}
+
+/* Task Table */
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-table th,
+.task-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.task-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.task-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.task-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Action Icons */
+.icon {
+  cursor: pointer;
+  margin: 0 5px;
+  font-size: 18px;
+}
+
+.edit-icon:hover {
+  color: #4CAF50;
+}
+
+.delete-icon:hover {
+  color: #F44336;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+  .task-table {
+    font-size: 0.9rem;
+  }
+
+  .task-list-container {
+    width: 95%;
+  }
+}
+
