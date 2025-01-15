@@ -5,6 +5,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const mysql = require("mysql2");
 
+
 const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
@@ -26,13 +27,25 @@ const db = mysql.createConnection({
   database: "taskdb",
 });
 
+
+// db.connect((err) => {
+//   if (err) {
+//     console.error("Error connecting to MySQL:", err);
+//     process.exit(1);
+//   }
+//   console.log("Connected to MySQL database!");
+// });
+
 db.connect((err) => {
   if (err) {
-    console.error("Error connecting to MySQL:", err);
-    process.exit(1);
+    console.error("MySQL Connection Error:", err.message);
+    return;
   }
   console.log("Connected to MySQL database!");
 });
+
+
+
 
 
 io.on("connection", (socket) => {
